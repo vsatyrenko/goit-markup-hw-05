@@ -10,6 +10,7 @@
     --hero-fone: rgba(47, 48, 58, 0.4);
     --icon-color: #afb1b8;
     --clients-border: #AFB1B8;
+    --timing-fuction: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -94,6 +95,7 @@ section {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--title-color);
+    transition: var(--timimg-fuction);
 }
 
 .site-nav {
@@ -116,7 +118,8 @@ section {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--primary-color)
+    color: var(--primary-color);
+    transition: var(--timimg-fuction);
 }
 
 .header-nav,
@@ -344,6 +347,7 @@ section {
     display: flex;
     justify-content: center;
     column-gap: 10px;
+    
 }
 
 
@@ -354,6 +358,7 @@ section {
     width: 44px;
     height: 44px;
     color: var(--icon-color);
+    transition: var(--timing-fuction);
 
 }
 
@@ -401,6 +406,7 @@ section {
     color: var(--clients-border);
     border: 1px solid var(--clients-border);
     border-radius: 4px;
+    transition: var(--timimg-fuction);
 }
 
 .site-clients:hover,
@@ -511,52 +517,50 @@ section {
 
 .works-items {
     display: block;
+    
+    
 }
 
 .works-items:hover,
-.works-items:focus,
-.works-thumb:hover::before,
-.works-thumb-text:hover
+.works-items:focus
  {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-
         0px 4px 4px 0px rgba(0, 0, 0, 0.06),
-
         0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-        opacity: 1;
-        
+    
+       
 }
 
 .works-thumb{
     position: relative;
+    
 }
 
-.works-thumb::before{
+.works-thumb .overlay{
     position: absolute;
-    display: inline-block;
-    content: "";
     width: 100%;
     height: 100%;
+    bottom: 0;
+    left: 0;
     background-color: rgba(33, 150, 243, 0.9);
     opacity: 0;
-    
+    transition: transform var(--timimg-fuction);
+    transform: translateY(100%);
 }
 
 .works-thumb-text{
     position: absolute;
     content: "";
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-line-height: 1.55;
-color: var(--white-color);
+    font-size: 18px;
+    line-height: 1.55;
+    padding: 63px 24px;
+    color: var(--white-color);
 }
-
-
+.works-thumb .overlay:hover
 {
     opacity: 1;
+    transform: translateY(0);
 }
-
 
 
 /*Portfolio*/
@@ -622,12 +626,14 @@ color: var(--white-color);
 .block-mail {
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
 .block-number {
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
