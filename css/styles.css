@@ -219,6 +219,7 @@ background-color: var(--accent-color);
 
     opacity: 1;
     transition: opacity var(--timing-fuction);
+   
 }
 
 .backdrop.is-hidden{
@@ -255,8 +256,6 @@ background-color: rgba(0, 0, 0, 1);
 }
    
 
-
-
 .fon {
     max-width: 1600px;
     height: 600px;
@@ -268,6 +267,7 @@ background-color: rgba(0, 0, 0, 1);
 
     background-position: center;
 }
+
 
 /* Features */
 .visually-hidden {
