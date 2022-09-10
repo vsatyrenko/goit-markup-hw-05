@@ -99,7 +99,7 @@ padding-bottom: 32px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--title-color);
-    transition: var(--timing-fuction);
+    transition: color var(--timing-fuction)
 }
 
 .link.current::after{
@@ -138,7 +138,7 @@ background-color: var(--accent-color);
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-color);
-    transition: var(--timing-fuction);
+    transition: color var(--timing-fuction);
 }
 
 .header-nav,
@@ -223,7 +223,7 @@ background-color: var(--accent-color);
     background-color:  rgba(0, 0, 0, 0.2);
 
     opacity: 1;
-    transition: opacity var(--timing-fuction);
+    transition-property: opacity var(--timing-fuction), visibility var(--timing-fuction);
    
 }
 
@@ -261,12 +261,10 @@ height: 30px;
 right: 8px;
 top: 8px;
 background-color: transparent;
-border: none;
 padding: 0;
 border-radius: 50%;
 border: 1px solid rgba(0, 0, 0, 0.1);
 }
-   
 
 .fon {
     max-width: 1600px;
@@ -343,7 +341,6 @@ border: 1px solid rgba(0, 0, 0, 0.1);
 .examples.list {
     display: flex;
     align-items: center;
-    padding-bottom: 0 auto;
     column-gap: 30px;
 }
 
@@ -438,7 +435,7 @@ border: 1px solid rgba(0, 0, 0, 0.1);
     width: 44px;
     height: 44px;
     color: var(--icon-color);
-    transition: var(--timing-fuction);
+    transition-property:color var(--timing-fuction), background-color var(--timing-fuction);
 
 }
 
@@ -486,7 +483,7 @@ border: 1px solid rgba(0, 0, 0, 0.1);
     color: var(--clients-border);
     border: 1px solid var(--clients-border);
     border-radius: 4px;
-    transition: var(--timing-fuction);
+    transition-property:border var(--timing-fuction), color var(--timing-fuction);
 }
 
 .site-clients:hover,
@@ -532,6 +529,7 @@ border: 1px solid rgba(0, 0, 0, 0.1);
     line-height: 1.62;
     background: var(--back-buttons-color);
     color: var(--title-color);
+    transition-property:color var(--timing-fuction), box-shadow var(--timing-fuction) ;
 
 
 
@@ -556,7 +554,6 @@ border: 1px solid rgba(0, 0, 0, 0.1);
 .filtr .button:focus {
     background: #2196F3;
     color: var(--white-color);
-    cursor: pointer;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
 
         0px 1px 2px 0px rgba(0, 0, 0, 0.08),
@@ -597,6 +594,7 @@ border: 1px solid rgba(0, 0, 0, 0.1);
 
 .works-items {
     display: block;
+    transition: box-shadow var(--timing-fuction);
     
     
 }
@@ -627,7 +625,7 @@ border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 63px 24px;
     color: var(--white-color);
     background-color: rgba(33, 150, 243, 0.9);
-    transition: transform  var(--timing-fuction);
+    transition: transform var(--timing-fuction);
     transform: translateY(100%);
 }
 .works-items:hover .overlay,
@@ -699,14 +697,14 @@ border: 1px solid rgba(0, 0, 0, 0.1);
 .block-mail {
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
-    transition: transform var(--timing-fuction);
+    transition-property:color var(--timing-fuction), transform var(--timing-fuction);
 
 }
 
 .block-number {
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
-    transition: transform var(--timing-fuction);
+    transition-property:color var(--timing-fuction), transform var(--timing-fuction);
 
 }
 
@@ -724,6 +722,8 @@ border: 1px solid rgba(0, 0, 0, 0.1);
     column-gap: 70px;
 }
 
+/*Join*/
+
 .join-tittle {
     margin-bottom: 20px;
     line-height: 1.14;
@@ -738,4 +738,29 @@ border: 1px solid rgba(0, 0, 0, 0.1);
 
 .join-icon {
     fill: var(--white-color);
+}
+
+/*Email-input*
+
+.email-action{
+    margin-bottom: 20px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: var(--white-color);
+}
+
+.input-btn{
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    background-color: var(--block-color);
+}
+
+.input{
+    display: flex;
+    padding-left: 15px;
+    width: 358px;
+    height: 50px;
+    background-color: var(--block-color);
+border: 1px solid rgba(255, 255, 255, 0.3)
 }
