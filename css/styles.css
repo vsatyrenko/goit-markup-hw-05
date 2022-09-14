@@ -435,10 +435,13 @@ border: 1px solid rgba(0, 0, 0, 0.1);
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    fill: currentColor;
     color: var(--icon-color);
     transition:color var(--timing-fuction), background-color var(--timing-fuction);
 
+}
+
+.social-icon{
+    fill: currentColor;
 }
 
 .social-networks-link:hover,
@@ -475,7 +478,6 @@ border: 1px solid rgba(0, 0, 0, 0.1);
     Width: 170px;
     Height: 92px;
     color: var(--clients-border);
-    fill: currentColor;
     border: 1px solid var(--clients-border);
     border-radius: 4px;
     transition:border var(--timing-fuction), color var(--timing-fuction);
@@ -692,14 +694,14 @@ border: 1px solid rgba(0, 0, 0, 0.1);
 .block-mail {
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
-    transition:color var(--timing-fuction), transform var(--timing-fuction);
+    transition:color var(--timing-fuction);
 
 }
 
 .block-number {
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
-    transition:color var(--timing-fuction), transform var(--timing-fuction);
+    transition:color var(--timing-fuction);
 
 }
 
@@ -732,10 +734,13 @@ border: 1px solid rgba(0, 0, 0, 0.1);
     justify-content: center;
     width: 44px;
     height: 44px;
-    fill: var(--white-color);
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     transition: background-color var(--timing-fuction);
+}
+
+.join-icon{
+    fill: var(--white-color);
 }
 
 .social-networks:hover,
